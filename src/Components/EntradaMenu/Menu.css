@@ -1,0 +1,11 @@
+.menu-container {
+    padding-bottom: 20px; /* Espacio hacia abajo */
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordado redondeado */
+    border: 2px solid #ccc; /* Borde sólido de color gris claro */
+  }
+  

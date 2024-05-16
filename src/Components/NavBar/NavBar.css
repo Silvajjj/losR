@@ -1,0 +1,60 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(14, 12, 13, 0.389);
+    width: 100%;
+    position: absolute;
+  }
+
+  .navbar-alt {
+    background-color: #060606; /* Nuevo color del NavBar en páginas Menu y Location */
+    /* Otros estilos específicos para el NavBar en páginas Menu y Location... */
+  }
+  
+  .menuItem {
+    background: #6e1217;
+    padding: 25px;
+    border: 2px solid #6e1217;
+    border-radius: 14%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Ajusta x, y, blur, y color */
+  }
+
+  .menuItem:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo {
+    padding: 15px;
+    padding-left: 55px;
+    width: 46%;
+  }
+  
+  .menuList {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    width: 37%;
+  }
+  
+  /* Importación de fuente personalizada */
+  @font-face {
+    font-family: 'ADLaM Display';
+    src: url('/path-to-your-font/AdlamDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ADLaM Display';
+    src: url('/path-to-your-font/AdlamDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+.menuItem{
+    font-family: 'ADLaM Display', sans-serif;
+    font-weight: bold; /* Usar 'bold' si está disponible */
+}
+ 

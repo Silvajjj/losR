@@ -1,18 +1,22 @@
-import React from 'react'
-import Logo from "/logoLetters.png"
-
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Logo from "/logoLetters.png";
+import './NavBar.css';
 
 const NavBar = () => {
+  const location = useLocation();
+  const isMenuOrLocation = location.pathname === "/menu" || location.pathname === "/location";
+
   return (
-    <section className='flex justify-between items-center bg-zinc-300 bg-opacity-10 absolute w-full'>
-      <img src={Logo} alt="" className='pl-10 w-1/4'/>
-        <ul className='flex justify-between w-4/12 pr-10'>
-          <li className='bg-red-900 p-3 rounded-full text-white w-3/12 text-center items-center uppercase'>Quienes Somos</li>
-          <li className='bg-red-900 p-3 rounded-full text-white w-3/12 text-center items-center uppercase'>Menu</li>
-          <li className='bg-red-900 p-3 rounded-full text-white w-3/12 text-center items-center uppercase'>Ubicacion</li>
-        </ul>
+    <section className={`navbar ${isMenuOrLocation ? 'navbar-alt' : ''}`}>
+      <img src={Logo} alt="Logo" className="logo" />
+      <ul className="menuList">
+        <li className="menuItem"><Link to="/">Quienes Somos</Link></li>
+        <li className="menuItem"><Link to="/menu">Menú</Link></li>
+        <li className="menuItem"><Link to="/location">Ubicación</Link></li>
+      </ul>
     </section>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

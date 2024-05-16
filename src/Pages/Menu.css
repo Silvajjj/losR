@@ -1,0 +1,89 @@
+.menu-container {
+    padding-top: 165px; /* Espacio hacia arriba igual al espacio del navbar */
+    display: flex; /* Para alinear elementos en fila */
+    flex-direction: column; /* Para apilar elementos verticalmente */
+    align-items: center; /* Para centrar horizontalmente */
+  }
+  
+  .entrada-menu-container {
+    padding-bottom: 20px; /* Espacio hacia abajo del div de especialidades */
+    width: 80%; /* Ancho del div de especialidades */
+    max-width: 1800px; /* Ancho máximo del div de especialidades */
+    padding: 20px; /* Relleno interior del div de especialidades */
+  }
+  
+  .menu-image-container {
+    width: 80%; /* Ancho igual al del div de especialidades */
+    max-width: 800px; /* Ancho máximo igual al del div de especialidades */
+    margin-top: 20px; /* Espacio hacia arriba entre la imagen y el div de especialidades */
+    border-top: 2px solid #ccc; /* Borde en la parte superior */
+    border-left: 2px solid #ccc; /* Borde en la parte izquierda */
+    border-right: 2px solid #ccc; /* Borde en la parte derecha */
+    border-radius: 10px 10px 0 0; /* Borde redondeado en la parte superior */
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Borde redondeado en la parte superior */
+  }
+  
+  .content-box {
+    width: 80%; /* Ancho igual al del div de especialidades y la imagen */
+    max-width: 800px; /* Ancho máximo igual al del div de especialidades y la imagen */
+    height: 1600px; /* Altura específica */
+    background: #e2e2e2; /* Fondo negro */
+    color: #010101; /* Color de texto blanco */
+    display: flex; /* Para alinear elementos en fila */
+    flex-direction: column; /* Para apilar elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 60px; /* Relleno interior del cuadro */
+    border-bottom-left-radius: 10px; /* Borde redondeado en la parte inferior izquierda */
+    border-bottom-right-radius: 10px; /* Borde redondeado en la parte inferior derecha */
+  }
+  
+  /* Nueva clase para el segundo content-box */
+  .content-box-parrilla {
+    width: 80%; /* Ancho igual al del div de especialidades y la imagen */
+    max-width: 800px; /* Ancho máximo igual al del div de especialidades y la imagen */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    background: #e2e2e2; /* Fondo negro */
+    color: #010101; /* Color de texto blanco */
+    display: flex; /* Para alinear elementos en fila */
+    flex-direction: column; /* Para apilar elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 60px; /* Relleno interior del cuadro */
+    border-bottom-left-radius: 10px; /* Borde redondeado en la parte inferior izquierda */
+    border-bottom-right-radius: 10px; /* Borde redondeado en la parte inferior derecha */
+  }
+  
+  .menu-text {
+    font-family: Akshar;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+    text-align: left;
+  }
+  
+  .text-light {
+    font-family: Akshar;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52.8px;
+    text-align: left;
+  }
+  
+  .text-normal {
+    font-family: Akshar;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 52.8px;
+    text-align: left;
+  }
+  
+  .special-text-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px 0;
+  }
+  

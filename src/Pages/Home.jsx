@@ -5,11 +5,12 @@ import Desarrollo from '../Components/Desarrollo/Desarrollo'
 import Diferencias from '../Components/Diferencias/Diferencias'
 import Footer from '../Components/Footer/Footer'
 
+
 const Home = () => {
   return (
     <div className='w-full h-screen'>
-        <img src={Hero} alt="" className='object-none object-left w-screen h-screen'/>
-        <Entrada />
+        <img src={Hero} alt="" className='object-cover w-full h-full'/>
+        <Entrada/>
         <Desarrollo />
         <Diferencias />
         <Footer/>
@@ -18,3 +19,4 @@ const Home = () => {
 }
 
 export default Home
+
